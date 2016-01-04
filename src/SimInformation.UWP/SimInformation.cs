@@ -8,7 +8,7 @@ namespace SimInformation.UWP
         /// <summary>
         ///     Will only return details of a SINGLE simcard.
         /// </summary>
-        /// <remarks>TODO: Add support for multiple sim cards.</remarks>
+        /// <remarks>TODO: Add support for multiple sim cards. See issue #1</remarks>
         public IReadOnlyList<SimCard> GetSimCards()
         {
             var results = new List<SimCard>();
