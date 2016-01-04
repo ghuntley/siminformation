@@ -1,3 +1,4 @@
+![Icon](https://i.imgur.com/5ps5Ewf.png)
 # SimInformation
 
 SimInformation is a cross-platform library that provides a way to access the following information from your SIM card:
