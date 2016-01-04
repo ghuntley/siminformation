@@ -42,6 +42,10 @@ xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/re
 </Capabilities>
 ```
 
+# Xamarin iOS (Unfinished)
+
+This plugin uses private API's, additionally it requires that your application be signed with the `com.apple.coretelephony.Identity.get` entitlement.
+
 # Usage
 
 The API is rather straight forward

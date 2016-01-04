@@ -18,6 +18,18 @@
 - https://github.com/pbakondy/cordova-plugin-sim/blob/master/src/android/com/pbakondy/Sim.java
 
 # iOS
+- https://stackoverflow.com/questions/18972242/use-private-api-for-inhouse-apps-to-get-imei-iccid-and-imsi
+- http://pastebin.com/vkAUfLZw
+
+- https://stackoverflow.com/questions/16667988/how-to-get-imei-on-iphone-5
+
+> On iOS 7 these APIs are protected by com.apple.coretelephony.Identity.get entitlement. To access IMEI (IMSI, phone number and other info) you need to sign your with that entitlement with boolean value set to true.
+
+- http://stackoverflow.com/a/27312697
+- https://stackoverflow.com/questions/27312352/accessing-sim-info-programatically-in-iphone
+- https://github.com/Cykey/ios-reversed-headers/blob/master/CoreTelephony/CTSIMSupport.h
+
+- https://stackoverflow.com/questions/21314439/how-to-get-the-iccid-of-the-sim-card-that-is-in-the-iphone-using-my-ios-app
 - https://github.com/pbakondy/cordova-plugin-sim/blob/master/src/ios/Sim.m
 
 # Universal Windows Platform
