@@ -47,14 +47,14 @@ xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/re
 The API is rather straight forward
 
     var simInformation = new SimInformation();
-    IReadOnly<SimCard> simCards = simInformation.GetAllCards();
+    IReadOnlyList<SimCard> simCards = simInformation.GetAllCards();
 
-    simcard[x].ICCID
-    simcard[x].MCC
-    simcard[x].IMSI
-    simcard[x].MSID
-    simcard[x].MNC
-    simcard[x].MSIDN
+    simCards[x].ICCID
+    simCards[x].MCC
+    simCards[x].IMSI
+    simCards[x].MSID
+    simCards[x].MNC
+    simCards[x].MSIDN
 
 Instead of newing up the implementation each time you need it, register it into your IoC/DI container:
 
@@ -63,16 +63,16 @@ Instead of newing up the implementation each time you need it, register it into 
 
 Then use it in your viewmodel or services as needed:
 
-   # example integration with reactiveui
-   public class MyCoolViewModel : ReactiveObject
-   {
+    # example integration with reactiveui
+    public class MyCoolViewModel : ReactiveObject
+    {
         private readonly ISimInformation _simInformation;
-
+        
         public MyCoolViewModel(ISimInformation simInformation = null)
         {
             _simInformation = simInformation ?? Locator.Current.GetService<ISimInformation>();
         }
-   }
+    }
 
 # With thanks to
 * The icon "<a href="https://thenounproject.com/term/sim-card/15159">SIM Card</a>" designed by <a href="https://thenounproject.com/misirlou">misirlou</a> from The Noun Project.
