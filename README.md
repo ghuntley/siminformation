@@ -31,7 +31,7 @@ With that all said and done, manually edit your application `Package.appxmanifes
 
 ```cs
 xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
-```cs
+```
 
 * Add the following capability which will allow the library access to this information.
 	
@@ -39,7 +39,7 @@ xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/re
 <Capabilities>
     <rescap:Capability Name="cellularDeviceIdentity" />
 </Capabilities>
-```cs
+```
 
 # With thanks to
 * The icon "<a href="https://thenounproject.com/term/sim-card/15159">SIM Card</a>" designed by <a href="https://thenounproject.com/misirlou">misirlou</a> from The Noun Project.
