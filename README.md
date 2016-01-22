@@ -31,7 +31,11 @@ With that all said and done, manually edit your application `Package.appxmanifes
 * Add the XML namespace as follows:
 
 ```cs
-xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" 
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+    IgnorableNamespaces="uap mp rescap">
 ```
 
 * Add the following capability which will allow the library access to this information.
